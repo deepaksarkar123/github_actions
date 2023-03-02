@@ -1,4 +1,4 @@
-name: Hello world workflow
+name: demo_workflow
 on:
   push:
     branches:
