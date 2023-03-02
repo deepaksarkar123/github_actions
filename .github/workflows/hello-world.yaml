@@ -6,7 +6,8 @@ name: Hello world workflow
   pull_request:
     branches:
       - main
-  workflow_disptach: null
+  workflow_disptach:
+  
 jobs:
   hello:
     runs-on: ubuntu-latest
