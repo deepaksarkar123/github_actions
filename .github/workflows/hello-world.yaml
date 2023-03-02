@@ -6,7 +6,7 @@ name: Hello world workflow
   pull_request:
     branches:
       - main
-  workflow_disptach:
+  workflow_dispatch:
   
 jobs:
   hello:
