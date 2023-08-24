@@ -1,4 +1,4 @@
-name: demo_workflow
+name: demo_workflow_1.0.0
 on:
   push:
     branches:
