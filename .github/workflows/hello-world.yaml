@@ -1,15 +1,19 @@
-name: Jira Triggered Workflow
+name: Jira Trigger
 
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: jira-status-change
+    types: jira-issue-updated
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v2
-    - name: Run some job
-      run: echo "Jira status changed!"
+      
+    - name: Run your task
+      run: |
+        echo "Jira issue updated!"
+        # Your commands here
