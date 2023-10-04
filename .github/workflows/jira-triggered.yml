@@ -1,0 +1,16 @@
+name: JIRA Triggered Workflow
+
+on:
+  repository_dispatch:  # Allows this action to be triggered externally.
+    types: [jira-issue-done]
+
+jobs:
+  handle_issue:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run some task
+      run: |
+        echo "Handle the JIRA task completion here."
